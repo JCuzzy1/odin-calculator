@@ -3,42 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intial-scale-1.0">
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css">
         <script src="main.js"></script>
         <title>Calculator</title>
+        
     </head>
     <body>
         <h1>Calculator</h1>
 
-        <div class="calculator">
-            <div class="first-row">
-                <div class="screen"></div>
-                <button class="clear">C</button>
+        <div class="container">
+            <div class="display">989</div>
+            <div class="buttons">
+                <button class="btn-number" data-num="1">1</button>
+                <button class="btn-number" data-num="2">2</button>
+                <button class="btn-number" data-num="3">3</button>
+                <button class="btn-operator" data-num="+">+</button>
+                <button class="btn-number" data-num="4">4</button>
+                <button class="btn-number" data-num="5">5</button>
+                <button class="btn-number" data-num="6">6</button>
+                <button class="btn-operator" data-num="-">-</button>
+                <button class="btn-number" data-num="7">7</button>
+                <button class="btn-number" data-num="8">8</button>
+                <button class="btn-number" data-num="9">9</button>
+                <button class="btn-operator" data-num="*">X</button>
+                <button class="btn-clear">C</button>
+                <button class="btn-number" data-num="0">0</button>
+                <button class="btn-equals" data-num="=">=</button>
+                <button class="btn-operator" data-num="/">/</button>
             </div>
-            <div class="other-rows">
-                <button class="number">7</button>
-                <button class="number">8</button>
-                <button class="number">9</button>
-                <button class="operator">/</button>
-            </div>
-            <div class="other-rows">
-                <button class="number">4</button>
-                <button class="number">5</button>
-                <button class="number">6</button>
-                <button class="operator">X</button>
-            </div>
-            <div class="other-rows">
-                <button class="number">1</button>
-                <button class="number">2</button>
-                <button class="number">3</button>
-                <button class="operator">-</button>
-            </div>
-            <div class="other-rows">
-                <button class="decimal">.</button>
-                <button class="number">0</button>
-                <button class="operator">=</button>
-                <button class="operator">+</button>
-            </div>
+            
 
         </div>
     </body>

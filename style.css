@@ -1,0 +1,49 @@
+.container {
+    background: white;
+    width: max-content;
+    margin: auto;
+}
+
+.display {
+    width: 100%;
+    background-color: whitesmoke;
+    border: 1px darkgrey;
+    height: 50px;
+    font-size: 48px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+button {
+    flex-grow: 1;
+    flex-basis: 25%;
+    padding: 15px;
+    font-size: 26px;
+    border-radius: 3%;
+
+}
+
+.btn-number {
+    background-color: white;
+}
+
+.btn-equals {
+    background-color: palegreen;
+}
+
+.btn-operator {
+    background-color: palegoldenrod;
+}
+
+.btn-clear {
+    background-color: tomato;
+}
+
+
