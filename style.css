@@ -75,9 +75,17 @@ button {
     border: 2px solid darkgrey; 
 }
 
+.btn-number:hover {
+    background-color: lightgray;
+}
+
 .btn-equals {
     background-color: palegreen;
     border: 2px solid darkgreen; 
+}
+
+.btn-equals:hover {
+    background-color: #00ff00;
 }
 
 .btn-operator {
@@ -85,14 +93,26 @@ button {
     border: 2px solid goldenrod; 
 }
 
+.btn-operator:hover {
+    background-color: gold;
+}
+
 .btn-clear {
     background-color: tomato;
     border: 2px solid darkred;
 }
 
+.btn-clear:hover {
+    background-color: crimson;
+}
+
 .btn-decimal {
     background-color: snow;
     border: 2px solid darkgrey; 
+}
+
+.btn-decimal:hover {
+    background-color: lightgray;
 }
 
 
