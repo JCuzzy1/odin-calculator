@@ -1,17 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .container {
     background: white;
     width: max-content;
     margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-row {
+    /* max-width: 400px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* flex-wrap: wrap;
+    padding: 4px;
+    margin: 2px;  */
+
 }
 
 .display {
-    width: 100%;
-    background-color: whitesmoke;
-    border: 1px darkgrey;
-    height: 50px;
+    width: 290px;
+    background-color: white;
+    border: 2px solid darkgrey;
+    border-radius: 3%;
+    height: 75px;
     font-size: 48px;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.previous {
+    font-size: 20px;
+}
+
+.current {
+    font-size: 35px;
 }
 
 .buttons {
@@ -19,31 +56,43 @@
     display: flex;
     flex-wrap: wrap;
     padding: 4px;
+    margin: 2px; 
 }
 
 button {
     flex-grow: 1;
-    flex-basis: 25%;
+    flex-basis: 18%;
     padding: 15px;
     font-size: 26px;
-    border-radius: 3%;
-
+    border-radius: 7%;
+    height: 75px;
+    width: 75px;
+    margin: 6px; 
 }
 
 .btn-number {
-    background-color: white;
+    background-color: snow;
+    border: 2px solid darkgrey; 
 }
 
 .btn-equals {
     background-color: palegreen;
+    border: 2px solid darkgreen; 
 }
 
 .btn-operator {
-    background-color: palegoldenrod;
+    background-color: lightgoldenrodyellow;
+    border: 2px solid goldenrod; 
 }
 
 .btn-clear {
     background-color: tomato;
+    border: 2px solid darkred;
+}
+
+.btn-decimal {
+    background-color: snow;
+    border: 2px solid darkgrey; 
 }
 
 
