@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     operators.forEach((op) => op.addEventListener("click", function(e) {
         handleOperator(e.target.textContent)
-        previousScreen.textContent = previousValue + "" + operator;
-        currentScreen.textContent = currentValue;
+        previousScreen.textContent = previousValue + " " + operator;
+        currentScreen.textContent = "";
     }))
 
     // add an eventListener to the clear button
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         currentValue = '';
         operator = '';
         previousScreen.textContent = currentValue;
-        currentScreen.textContent = currentValue;
+        currentScreen.textContent = '';
     })
 
     // add an eventListener to the equals button. Get it to calculate basic equations.
@@ -80,6 +80,7 @@ function handleNumber(num) {
 }
 
 function handleOperator(op) {
+    calculate();
     operator = op;
     previousValue = currentValue;
     currentValue = '';
@@ -91,17 +92,26 @@ function calculate() {
 
     if(operator === "+") {
         previousValue += currentValue;
+        currentValue = previousValue;
     } else if(operator === "-") {
         previousValue -= currentValue;
+        currentValue = previousValue;
     } else if(operator === "X") {
         previousValue *= currentValue;
+        currentValue = previousValue;
     } else {
         previousValue /= currentValue;
+        currentValue = previousValue;
     }
+    
 
     previousValue = roundNumber(previousValue);
-    previousValue= previousValue.toString();
+    previousValue = previousValue.toString();
     currentValue = previousValue.toString();
+    // previousScreen.textContent = "";
+    // currentScreen.textContent = previousValue;
+
+    // operator = '';
     // console.log(previousValue);
 }
 
