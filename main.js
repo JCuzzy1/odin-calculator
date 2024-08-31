@@ -55,7 +55,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // add an eventListener to the equals button. Get it to calculate basic equations.
 
     equals.addEventListener("click", function() {
-       calculate() 
+      if(currentValue != '' && previousValue != '') {
+        calculate() 
+        previousScreen.textContent = "";
+        if(previousValue.length <= 15) {
+                currentScreen.textContent = previousValue;
+        }  else {
+                currentScreen.textContent = previousValue.slice(0,15) + "...";
+        }
+    }
+
+    })
+
+    decimal.addEventListener("click", function() {
+        addDecimal()
     })
 
 })
@@ -98,6 +111,11 @@ function roundNumber(num) {
     return Math.round(num * 100000000000000) / 100000000000000;
 }
 
+function addDecimal() {
+    if(!currentValue.includes(".")) {
+        currentValue += '.';
+    }
+}
 
 
 
